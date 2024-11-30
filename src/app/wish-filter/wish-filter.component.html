@@ -1,0 +1,11 @@
+<label for="filterSelect" class="form-label">Filter Wishes: </label>
+<select
+  id="filterSelect"
+  class="form-select"
+  [(ngModel)]="filterOption"
+  (ngModelChange)="changeFilter($event)"
+>
+  <option value="0">All</option>
+  <option value="1">Fulfilled</option>
+  <option value="2">Unfulfilled</option>
+</select>

@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+ <add-wish-form (addWish)="items.push($event)"></add-wish-form>
+ <br>
+
+ <app-wish-filter (filter)="filterOption= $event"></app-wish-filter>
+  <br><br>
+
+
+
+
+<app-wish-list [wishes]="visibleItem"></app-wish-list>
+
+
+</div>
