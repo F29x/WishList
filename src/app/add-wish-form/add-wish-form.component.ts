@@ -14,7 +14,10 @@ export class AddWishFormComponent {
 
   newWishText ='';
   addNewWish(){
-    this.addWish.emit(new WishList(this.newWishText))
+    if(this.newWishText !== ''){
+
+      this.addWish.emit(new WishList(this.newWishText))
+    }
     this.newWishText = ''
 
   }
